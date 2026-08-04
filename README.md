@@ -1,18 +1,22 @@
-# mcp-string-db
+# @pipeworx/string-db
 
-STRING-DB MCP — protein-protein interaction networks.
+[STRING](https://string-db.org) MCP — protein-protein interaction networks across ~12 000 organisms. Keyless REST.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `resolve` | Map free-text identifiers (gene symbols, accessions) → STRING identifiers. |
-| `interactions` | Interaction partners for a set of proteins. |
-| `network` | Network image url + tabular interaction data. |
-| `enrichment` | Functional enrichment (GO, KEGG, Pfam, Reactome, …) for a gene set. |
-| `homology` | Homology mappings. |
+- `resolve(identifiers, species?, limit?)` — map free-text gene names → STRING identifiers
+- `interactions(identifiers, species?, required_score?, limit?, network_type?)` — interaction partners
+- `network(identifiers, species?, required_score?, network_type?)` — network image url + tabular data
+- `enrichment(identifiers, species?)` — functional enrichment for a gene set
+- `homology(identifiers, species?)` — homology mappings to other organisms
+
+`species` is NCBI taxonomy id (default `9606` human).
+
+## Data source
+
+`https://string-db.org/api/json/`
 
 ## Quick Start
 
@@ -28,7 +32,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -52,7 +56,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
