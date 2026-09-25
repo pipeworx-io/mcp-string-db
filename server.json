@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/string-db",
   "title": "String Db",
-  "description": "STRING protein-protein interaction networks across ~12k organisms",
-  "version": "0.1.0",
+  "description": "STRING-DB MCP — protein-protein interaction networks.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/string-db",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-string-db",

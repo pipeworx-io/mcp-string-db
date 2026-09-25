@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-string-db",
-  "version": "0.1.0",
-  "description": "STRING protein-protein interaction networks across ~12k organisms",
+  "version": "0.1.1",
+  "description": "STRING-DB MCP — protein-protein interaction networks.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-string-db": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "string-db"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-string-db"
+    "url": "git+https://github.com/pipeworx-io/mcp-string-db.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-a2dd2aeb3eb41cccf7aefc3cd9723822d0d47a1c61f17881d4cde09b96d46676",
+    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
   }
 }
