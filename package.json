@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-string-db",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "STRING-DB MCP — protein-protein interaction networks.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-a2dd2aeb3eb41cccf7aefc3cd9723822d0d47a1c61f17881d4cde09b96d46676",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-b9dc6ffeeaff4717fa1aa66c281f1ff2329cf89d9fe6993760b98b7ef4932f8b",
+    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
   }
 }
