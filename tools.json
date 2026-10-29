@@ -1,0 +1,130 @@
+[
+  {
+    "name": "resolve",
+    "description": "Map free-text identifiers (gene symbols, accessions) → STRING identifiers.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "species": {
+          "type": "number",
+          "description": "NCBI taxonomy id (default 9606)."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Best-N matches per input (default 1)."
+        }
+      },
+      "required": [
+        "identifiers"
+      ]
+    }
+  },
+  {
+    "name": "interactions",
+    "description": "Interaction partners for a set of proteins.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "species": {
+          "type": "number"
+        },
+        "required_score": {
+          "type": "number",
+          "description": "0-1000 confidence score (default 400)."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max partners per protein (default 10)."
+        },
+        "network_type": {
+          "type": "string",
+          "description": "functional (default) | physical"
+        }
+      },
+      "required": [
+        "identifiers"
+      ]
+    }
+  },
+  {
+    "name": "network",
+    "description": "Network image url + tabular interaction data.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "species": {
+          "type": "number"
+        },
+        "required_score": {
+          "type": "number"
+        },
+        "network_type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "identifiers"
+      ]
+    }
+  },
+  {
+    "name": "enrichment",
+    "description": "Functional enrichment (GO, KEGG, Pfam, Reactome, …) for a gene set.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "species": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "identifiers"
+      ]
+    }
+  },
+  {
+    "name": "homology",
+    "description": "Retrieve STRING-DB homology mappings for a list of protein identifiers (gene symbols or accessions) within a given NCBI taxonomy species (default 9606=human), returning cross-species homolog relationships.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "species": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "identifiers"
+      ]
+    }
+  }
+]

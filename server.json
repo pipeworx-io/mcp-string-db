@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/string-db",
   "title": "String Db",
   "description": "STRING-DB MCP — protein-protein interaction networks.",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/string-db",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-string-db",
