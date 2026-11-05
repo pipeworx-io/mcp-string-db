@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-string-db",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "STRING-DB MCP — protein-protein interaction networks.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "string-db",
     "gatewaySlug": "string-db",
-    "sourceHash": "v1-4e7db3115dd6597304358c376a3db78b7e279bbc87dfcb4c3bf889a256bbe0e9",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-26c0a5c5f669a3fae508df939686fd47748942939bf98d5641c184c874ba519e",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
